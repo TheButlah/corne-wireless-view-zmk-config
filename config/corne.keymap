@@ -23,8 +23,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
-            tapping-term-ms = <150>;                        // produces hold only if other key tapped sooner than this
-            quick-tap-ms = <150>;                           // produces tap if double tapped sooner than this
+            tapping-term-ms = <120>;                        // produces hold only if other key tapped sooner than this
+            quick-tap-ms = <120>;                           // produces tap if double tapped sooner than this
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;    // right-hand keys
         };
@@ -33,8 +33,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
-            tapping-term-ms = <150>;                        // produces hold only if other key tapped sooner than this
-            quick-tap-ms = <150>;                           // produces tap if double tapped sooner than this
+            tapping-term-ms = <120>;                        // produces hold only if other key tapped sooner than this
+            quick-tap-ms = <120>;                           // produces tap if double tapped sooner than this
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;    // left-hand keys
         };
