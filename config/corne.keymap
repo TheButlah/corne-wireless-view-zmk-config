@@ -23,9 +23,9 @@
         hm_l: homerow_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // produces hold only if other key tapped sooner than this
-            quick-tap-ms = <100>;                           // produces tap if double tapped sooner than this
+            flavor = "balanced";                      // hold if other key pressed and released while this one is pressed
+            tapping-term-ms = <250>;                  // hold after this time
+            quick-tap-ms = <250>;                     // produces tap if double tapped sooner than this
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R>;    // right-hand keys
         };
@@ -33,9 +33,9 @@
         hm_r: homerow_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // produces hold only if other key tapped sooner than this
-            quick-tap-ms = <100>;                           // produces tap if double tapped sooner than this
+            flavor = "balanced";                      // hold if other key pressed and released while this one is pressed
+            tapping-term-ms = <250>;                  // produces hold only if other key tapped and released sooner than this
+            quick-tap-ms = <250>;                     // produces tap if double tapped sooner than this
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L>;    // left-hand keys
         };
